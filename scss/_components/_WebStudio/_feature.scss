@@ -1,0 +1,27 @@
+
+.feature {
+  width: 23%;
+}
+
+.feature-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  .feature-title {
+     @extend %font-bold;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .feature-text {
+    @extend %font-regular;
+    font-size: 14px;
+    line-height: 24px;
+    @extend %color-gray;
+  }
+}
+
+.flex-container1 {
+   @extend %flex-space-between;
+}
+
