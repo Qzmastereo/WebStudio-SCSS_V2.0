@@ -1,16 +1,23 @@
-
 .feature {
-  width: 23%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 270px;
 }
 
+
 .feature-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 
   .feature-title {
      @extend %font-bold;
     font-size: 14px;
     line-height: 24px;
+
+    @media screen and (min-width: 768px) {
+    text-align: left;
+  }
   }
 
   .feature-text {
@@ -22,6 +29,37 @@
 }
 
 .flex-container1 {
-   @extend %flex-space-between;
+  @extend %flex-space-between;
+   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
+
+@media screen and (min-width: 768px) {
+  
+  #four{
+    margin-right: 15px;
+  }
+  #one{
+    margin-left: 15px;
+  }
+  #three{
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .feature {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-bottom: 30px;
+  }
+  .feature-section{
+    padding-bottom: 40px;
+  }
+}

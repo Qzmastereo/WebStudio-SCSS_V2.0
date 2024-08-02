@@ -3,6 +3,7 @@
   padding-top: 24px;
   padding-bottom: 25px;
 
+
   .container {
     display: flex;
     align-items: center;
@@ -16,8 +17,13 @@
   justify-self: center;
   align-items: center;
 
+ 
   .logo {
     margin-right: 150px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      margin-right: 87px;
+    }
   }
 
   .nav-link {
@@ -28,6 +34,10 @@
     color: #212121;
     margin-right: 50px;
     position: relative;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      
+    }
 
     &:hover {
       color: $button;
@@ -66,7 +76,6 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
-
     &:hover {
       color: $button;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -79,8 +88,9 @@
 
   .nav-email svg {
     margin-left: 144px;
-  }
 
+  }
+   
  .phone-number svg {
     margin-left: 50px;
   }
@@ -89,4 +99,9 @@
     fill: #2196F3;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  
+}
+.contact{
+  display: flex;
+  align-items: center;
 }
