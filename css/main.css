@@ -384,22 +384,12 @@ body {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  transform: translate(-50%, -50%) scale(0.5);
-}
-@media screen and (max-width: 767px) {
-  .backdrop.is-hidden {
-    transform: scale(0.65);
-  }
-}
-@media screen and (max-width: 767px) {
-  .backdrop.is-hidden {
-    padding: 93px 15px;
-  }
 }
 
 .modal {
   position: absolute;
   border-radius: 4px;
+  width: 528px;
   background-color: #ffffff;
   transform: translate(-50%, -50%);
   transition: opacity, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
@@ -407,7 +397,10 @@ body {
 }
 @media screen and (max-width: 767px) {
   .modal {
-    left: -25%;
+    top: 50%;
+    left: 50%;
+    width: 340px;
+    height: 609px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -435,32 +428,61 @@ body {
   border-color: rgba(0, 0, 0, 0.1019607843);
   cursor: pointer;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal .btn {
     margin-left: 420px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .modal .btn {
+    margin-left: 305px;
+    margin-top: 5px;
   }
 }
 .modal .form-title {
   font-size: 20px;
   margin-bottom: 12px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal .form-title {
+    max-width: 340px;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .modal .form-title {
+    max-width: 260px;
+    margin-left: 40px;
+  }
+}
 .modal .form {
   flex-direction: column;
-  margin-left: 40px;
+  margin-left: 35px;
+  max-width: 520px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal .form {
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .modal .form {
     justify-content: center;
+    margin-left: 27px;
   }
 }
 .modal .form .pred-title {
   font-size: 12px;
 }
 .modal .form .form-input {
-  width: 418px;
+  width: 419px;
   height: 40px;
   border-color: rgba(33, 33, 33, 0.2);
+}
+@media screen and (max-width: 767px) {
+  .modal .form .form-input {
+    width: 250px;
+  }
 }
 .modal .form .checkbox {
   width: 16px;
@@ -490,6 +512,11 @@ body {
   height: 50px;
   cursor: pointer;
   margin: 17px 0 0 125px;
+}
+@media screen and (max-width: 767px) {
+  .button {
+    margin-left: 33px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -622,7 +649,7 @@ body {
     padding-bottom: 40px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .flex-container1 {
     display: flex;
     flex-direction: column;
@@ -646,6 +673,11 @@ body {
 .main-footer .footer-social {
   flex-direction: column;
   padding-left: 70px;
+}
+@media screen and (min-width: 1200px) {
+  .main-footer .footer-social {
+    margin-right: 93px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .main-footer .footer-social {
@@ -689,6 +721,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3019607843);
   background-color: #2F303A;
   padding-left: 15px;
+  margin-right: 5px;
 }
 .main-footer .btn-footer {
   border-radius: 4px;
@@ -719,6 +752,11 @@ body {
   padding-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-info {
+    margin-right: 70px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .footer-info {
     margin-bottom: 60px;
@@ -933,6 +971,11 @@ body {
   font-weight: 400;
   font-size: 12px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  #fourr {
+    min-width: 267px;
+  }
 }
 
 #onee,
