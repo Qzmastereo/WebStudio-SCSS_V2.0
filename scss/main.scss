@@ -16,7 +16,6 @@ body {
 @import "./_untills/variables";
 
 
-
 @import "./_components/_WebStudio/header";
 @import "./_components/_WebStudio/main-sec";
 @import "./_components/_WebStudio/modal";
@@ -136,6 +135,7 @@ ul li {
     width: 750px;
     margin: 0px auto;
     padding: 0;
+    
   }
 
   @media screen and (min-width: 1200px) {
@@ -147,3 +147,8 @@ ul li {
     padding: 0px 15px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    section{
+    padding: 0px 15px;
+  }
+  }
