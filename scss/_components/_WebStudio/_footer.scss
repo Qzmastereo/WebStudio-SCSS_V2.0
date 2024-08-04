@@ -94,6 +94,10 @@
     letter-spacing: 6%;
     @extend %color-white;
     padding-bottom: 5px;
+
+    @media screen and (max-width: 767px){
+      margin-top: 35px;
+    }
   }
 
   .img-btn-footer {
@@ -162,3 +166,24 @@
   }
 }
   }
+
+  .main-footer{
+    .footer-social{
+    padding: 0;
+  }
+  .footer-form{
+    margin-left: 0;
+  }
+  .container{
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+@media screen and (max-width: 767px){
+  
+  .input-footer {
+        width: 325px;
+    }
+}

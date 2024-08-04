@@ -71,6 +71,7 @@ body {
   font-weight: 400;
   font-size: 12px;
   margin-bottom: 20px;
+  
 }
 
 #onee,
@@ -124,11 +125,10 @@ ul li {
 }
 .container {
   width: 100%;
-
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 462px;
+  @media screen and (max-width: 767px){
+    margin: 0px auto;
+    padding: 0;
   }
-
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 750px;
     margin: 0px auto;
@@ -137,5 +137,10 @@ ul li {
 
   @media screen and (min-width: 1200px) {
     width: 1182px;
+  }
+}
+@media screen and (max-width: 767px){
+  section{
+    padding: 0px 15px;
   }
 }

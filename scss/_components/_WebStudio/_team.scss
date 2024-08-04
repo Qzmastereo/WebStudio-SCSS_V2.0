@@ -103,3 +103,16 @@
     font-size: 28px;
   }
 }
+@media screen and (max-width: 768px){
+  .team-list{
+    flex-direction: column;
+
+    .team-li{
+      width: 100%;
+
+      .foto-member{
+        max-width: 100%;
+      }
+    }
+  }
+}
