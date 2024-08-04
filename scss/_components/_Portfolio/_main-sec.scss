@@ -40,13 +40,13 @@
         box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.5);
 
         .overlay {
-          height: calc(100% - 60px); /* Adjusted height */
+          height: calc(100% - 60px); 
         }
       }
 
       .overlay {
         position: absolute;
-        bottom: 60px; /* Adjusted bottom position */
+        bottom: 60px; 
         left: 0;
         right: 0;
         background-color: #2196F3E5;

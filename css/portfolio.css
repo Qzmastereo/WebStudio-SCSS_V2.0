@@ -500,11 +500,11 @@ body {
   box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.5);
 }
 .main-section .container .portfolio-item:hover .overlay {
-  height: calc(100% - 60px); /* Adjusted height */
+  height: calc(100% - 60px);
 }
 .main-section .container .portfolio-item .overlay {
   position: absolute;
-  bottom: 60px; /* Adjusted bottom position */
+  bottom: 60px;
   left: 0;
   right: 0;
   background-color: rgba(33, 150, 243, 0.8980392157);
