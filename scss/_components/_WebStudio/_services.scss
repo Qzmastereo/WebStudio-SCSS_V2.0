@@ -2,6 +2,7 @@
 .services {
   padding-bottom: 94px;
   position: relative;
+  
 
   &-title {
     @extend %font-bold;
@@ -13,6 +14,9 @@
 
   &-list {
     @extend %flex-space-between;
+   li{
+    margin-right: 30px;
+   }
   }
 }
 
