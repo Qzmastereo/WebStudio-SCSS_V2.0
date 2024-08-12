@@ -367,6 +367,11 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 1200px) {
+  .main-section {
+    max-width: 100%;
+  }
+}
 .main-section .flex-container {
   margin-right: auto;
   margin-left: auto;
